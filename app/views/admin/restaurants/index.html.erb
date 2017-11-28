@@ -8,5 +8,6 @@
   <%= link_to "delete", admin_restaurant_path(restaurant),method: :delete, data: {confirm: "Are you sure??"} %>
 </li>
   <% end %>
+  <%= paginate @restaurants %>
 
 <%= link_to "New restaurant", new_admin_restaurant_path %>
