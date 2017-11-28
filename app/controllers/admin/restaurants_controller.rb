@@ -39,7 +39,7 @@ before_action :find_restaurant, only: [:show, :edit, :update, :destroy]
   private 
 
   def restaurant_param
-    params.require(:restaurant).permit(:name, :opening_hours, :tel, :address, :description)
+    params.require(:restaurant).permit(:name, :opening_hours, :tel, :address, :description, :image)
   end
 
   def find_restaurant
